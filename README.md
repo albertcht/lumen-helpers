@@ -16,7 +16,7 @@ It can be used for improving implementation compatibility, assuming that you are
 If composer is used, it can be introduced by adding the following description.
 
 ```
-composer require --dev albertcht/lumen-helpers
+composer require albertcht/lumen-helpers
 ```
 
 ## How to use
