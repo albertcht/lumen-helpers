@@ -32,8 +32,6 @@ This package currently provides the following helper functions.
 - **back**
 - **bcrypt**
 - **cache**
-- **cookie**
-    It will return `Symfony\Component\HttpFoundation\Cookie` directly.
 - **logger**
 - **method_field**
 - **mix**
@@ -41,7 +39,9 @@ This package currently provides the following helper functions.
 - **public_path**
 - **report**
 - **validator**
-- **app_with**:
-    An app () compatible helper corresponding to makeWith call.
-    illuminate/container: From 5.4, you can not pass $parameters to make, instead makeWith prepared,
-    By using app_with, make can be done by passing parameters that ask Lumen, illuminate / container version.
+- **cookie**
+     > It will return `Symfony\Component\HttpFoundation\Cookie` directly.
+- **app_with**
+    > An app () compatible helper corresponding to makeWith call.
+    > illuminate/container: From 5.4, you can not pass $parameters to make, instead makeWith prepared,
+    > By using app_with, make can be done by passing parameters that ask Lumen, illuminate / container version.
