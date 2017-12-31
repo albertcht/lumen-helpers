@@ -21,8 +21,8 @@
         "psr-4": {
             "AlbertCht\\Lumen\\Helpers\\": "src/"
         },
-        "files": {
+        "files": [
             "src/helpers.php"
-        }
+        ]
     }
 }
