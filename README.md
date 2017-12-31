@@ -23,6 +23,7 @@ composer require albertcht/lumen-helpers
 
 This package currently provides the following helper functions.
 
+- **mix**
 - **abort_if**
 - **abort_unless**
 - **action**
@@ -37,6 +38,7 @@ This package currently provides the following helper functions.
 - **mix**
 - **policy**
 - **public_path**
+- **config_path**
 - **report**
 - **validator**
 - **cookie**
