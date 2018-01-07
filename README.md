@@ -16,13 +16,14 @@ It can be used for improving implementation compatibility, assuming that you are
 If composer is used, it can be introduced by adding the following description.
 
 ```
-composer require --dev albertcht/lumen-helpers
+composer require albertcht/lumen-helpers
 ```
 
 ## How to use
 
 This package currently provides the following helper functions.
 
+- **mix**
 - **abort_if**
 - **abort_unless**
 - **action**
@@ -37,6 +38,7 @@ This package currently provides the following helper functions.
 - **mix**
 - **policy**
 - **public_path**
+- **config_path**
 - **report**
 - **validator**
 - **cookie**
