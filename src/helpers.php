@@ -22,7 +22,7 @@ if (! function_exists('public_path')) {
      */
     function public_path($path = '')
     {
-        return rtrim(app()->basePath('public'.$path), DIRECTORY_SEPARATOR);
+        return rtrim(app()->basePath('public/'.$path), DIRECTORY_SEPARATOR);
     }
 }
 
@@ -35,7 +35,7 @@ if (! function_exists('config_path')) {
      */
     function config_path($path = '')
     {
-        return rtrim(app()->basePath('config'.$path), DIRECTORY_SEPARATOR);
+        return rtrim(app()->basePath('config/'.$path), DIRECTORY_SEPARATOR);
     }
 }
 
@@ -59,7 +59,7 @@ if (! function_exists('mix')) {
             $manifestDirectory = "/{$manifestDirectory}";
         }
         $manifestKey = $manifestDirectory ? $manifestDirectory : '/';
-        if (file_exists(public_path($manifestDirectory.'/hot'))) {
+        if (file_exists(public_path($manifestDirectory.'hot'))) {
             return new HtmlString("//localhost:8080{$path}");
         }
         if (in_array($manifestKey, $manifests)) {
@@ -79,20 +79,6 @@ if (! function_exists('mix')) {
             );
         }
         return new HtmlString($manifestDirectory.$manifest[$path]);
-    }
-}
-
-if (! function_exists('public_path')) {
-    /**
-     * Get the path to the public folder.
-     *
-     * @param  string  $path
-     * @return string
-     */
-    function public_path($path = '')
-    {
-        $public_folder = realpath(__DIR__.'/../public/');
-        return $public_folder.($path ? DIRECTORY_SEPARATOR.ltrim($path, DIRECTORY_SEPARATOR) : $path);
     }
 }
 
