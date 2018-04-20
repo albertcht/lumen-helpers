@@ -33,6 +33,7 @@ This package currently provides the following helper functions.
 - **back**
 - **bcrypt**
 - **cache**
+- **request**
 - **logger**
 - **method_field**
 - **mix**
