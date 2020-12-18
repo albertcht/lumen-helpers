@@ -5,8 +5,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Albert Chen",
-            "email": "albert.cht@gmail.com"
+            "name": "Nilton OS",
+            "email": "jniltinho@gmail.com"
         }
     ],
     "require": {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AlbertCht\\Lumen\\Helpers\\": "src/"
+            "NiltonOS\\Lumen\\Helpers\\": "src/"
         },
         "files": [
             "src/helpers.php"
